@@ -64,7 +64,8 @@ function HeaderComponent() {
                                 background: "#3c6e71",
                                 
                               }}
-                              
+                            position="relative"
+                            top={-3}
                             backgroundColor="#3c6e71" as={Button}>
                             <i class='bx bx-user-circle'></i>
                             </MenuButton>
@@ -82,7 +83,7 @@ function HeaderComponent() {
                                      }}
                                 color="#353535"
                                 fontFamily="'Luckiest Guy', cursive"
-                                fontWeight="extrabold"
+                                fontWeight="ext3rabold"
                               >Login</MenuItem>
                                 
                             </MenuList>
