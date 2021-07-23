@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, body{
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+}
+
+body{
+  min-width: fit-content;
+}
+
+
+/*set variable */
+:root{
+  --firstColor: #353535;
+  --secondcolor: #3c6e71;
+  --thirdColor: #ffffff;
+  --fourthColor: #d9d9d9;
+  --fifthColor: #284b63;
+  --luckiest:   'Luckiest Guy', cursive;
+
+
+}
+
+/* Links*/
+a{
+  text-decoration: none;
+}
+
+/*navBar*/
+nav{
+  background-color: var(--secondcolor);
+  position: relative;
+  z-index: 2;
+}
+.crazyNavBarRow1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 9px;
+  position: relative;
+  height: 50px;
+}
+.crazyLogo{
+  background-color: var(--fifthColor);
+  color: white;
+  padding: 9px;
+  position: absolute; 
+  display: flex;
+  flex-direction: column;
+}
+.crazyLogo>h1{
+  font-family: var(--luckiest);
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+.adjust{
+  flex-direction: row;
+}
+.crazyLogoWidth{
+  padding-left: 2px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -5px;
+}
+
+.contactMenu{
+  color: white;
+  padding: 9px 0;
+  position: absolute;
+  right: 10px;
+}
+.contactMenu>i{
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+
+}
+
+.crazyNavBarRow2{
+ background-color: var(--secondcolor);
+ color: white;
+ text-align: center;
+ font-weight: bold;
+ transition: height 2s, ease-in;
+ -webkit-transition: height 2s, ease-in;
+ border-top: 1px solid var(--fourthColor);
+ position: absolute;
+ width: 100%;
+}
+.crazyNavBarRow2 .crazyMenuList{
+  padding: 0.5rem 0;
+}
+.crazyMenuList>a{
+  color: white;
+  font-family: var(--luckiest);
+  color: var(--firstColor);
+  letter-spacing: 2px;
+
+}
+.crazyNavBarRow2:last-child{
+  padding-bottom: 1rem;
+}
+.show{
+  display:block;
+}
+.hide{
+  display: none;
+}
+.accordionFlexColum{
+  display: flex;
+  flex-direction: column;
+
+}
+.typingEffectBox{
+height: 160px;
+background-color: var(--fourthColor);
+z-index: 0;
+text-align: center;
+background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 115' preserveAspectRatio='none'><polygon points='0 0 100 0 100 100 0 115' fill='rgb(53, 53, 53)'/></svg>");
+}
+
+.txt_type{
+  color: white;
+  font-size: 28px;
+  font-family: var(--luckiest);
+  letter-spacing: .2rem;
+}
+.crazyMiddle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* functionCard */
+.cardContainer{
+  background-color: var(--fourthColor);
+  padding-bottom: 10px;
+ 
+}
+.functionCard{
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin: auto;
+  background-color: white;
+  padding: 10px 20px;
+  border: solid var(--fifthColor);
+  margin-bottom: 10px;
+  
+}
+.svgBox{
+  width: 50%;
+  height: 20%;
+}
+.crazyCardTitle{
+  font-family: var(--luckiest);
+text-align: center;
+color: var(--secondcolor)
+}
+.crazyCardBody{
+font-size: 1.4rem;
+font-weight: bold;
+padding: 10px 0;
+
+}
+.seeMore{
+  font-family: var(--luckiest);
+  color: white;
+  background-color: var(--firstColor);
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.graphContainer{
+  background-color: var(--fourthColor);
+  padding-bottom: 40px;
+  position: relative;
+}
+.svgRandom{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  z-index: 0;
+  grid-template-areas: 'firstSvg secondSvg'
+                        'firstSvg thirdSvg'
+                        'fourthSvg thirdSvg'
+                        'fifthSvg sixthSvg'
+                        '1fr sixthSvg'
+                        ;
+  
+}
+.firstSvg{
+grid-area: firstSvg;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.secondSvg{
+  grid-area: secondSvg;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.thirdSvg{
+  grid-area: thirdSvg;
+  display: flex;
+  justify-content: center;
+}
+.fourthSvg{
+  grid-area: fourthSvg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fifthSvg{
+  grid-area: fifthSvg;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sixthSvg{
+  grid-area: sixthSvg;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.firstSvgC{
+  width: 100px;
+  height: 100px;
+  }
+  .secondSvgC{
+    width: 100px;
+    height: 100px;
+  }
+  .thirdSvgC{
+    width: 100px;
+    height: 100px;
+  }
+  .fourthSvgC{
+    width: 100px;
+    height: 100px;
+  }
+  .fifthSvgC{
+    width: 100px;
+    height: 100px;
+  }
+  .sixthSvgC{
+    width: 100px;
+    height: 100px;
+  }
+.calculationArea{
+  z-index: 1;
+  position: relative;
+}
+.metricInput{
+  background-color: var(--thirdColor);
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.plotContainer{
+  background-color: var(--thirdColor);
+  width: 400px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 3px; 
+  margin-bottom: 20px;
+}
+.tableContainer{
+  background-color: var(--thirdColor);
+  width: 400px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 3px; 
+}
+.plotContainersTitle{
+  color: var(--fifthColor);
+  font-family: var(--luckiest);
+  font-size: 20px;
+}
+
+.metricContainer{
+  background-color: var(--thirdColor);
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.buttonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+.plotButton{
+  background-color: var(--fifthColor);
+  padding: 4px 12px;
+  color: white;
+  font-family: var(--luckiest);
+  border-radius: 4px;
+}
+.axisStyle{
+  font-size: 1.6rem;
+  font-family: var(--luckiest);
+  color: var(--fifthColor);
+  margin-right: 10px;
+}
+.flexRow{
+  display: flex;
+  flex-direction: row;
+}
+.flexEnd{
+  justify-content: flex-end;
+}
+.addInput{
+  
+}
+.removeInput{
+
+}
+.crazyAddRemove{
+  background-color: var(--fourthColor);
+  border-radius: 4px;
+  padding: 4px 9px;
+  margin-top: 2px;
+  margin-left: 4px;
+  width: 35px;
+  height:25px;
+  cursor: pointer;
+}
+
+.marginBottom10{
+margin-bottom: 10px;
+}
+.marginTop4{
+  margin-top: 4px;
+}
+.hide{
+  display: none;
+}
